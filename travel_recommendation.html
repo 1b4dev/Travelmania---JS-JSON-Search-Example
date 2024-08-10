@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travelmania | Crazy Holiday Routes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary bg-gradient py-3">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="travel_recommendation.html">
+            <img src="images/logo.png"  alt="Logo" width="36" height="36" class="d-inline-block me-2">
+            Travelmania</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarScroll" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarScroll">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Discover Travelmania</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="dropdown ms-lg-auto me-lg-2">
+                <form class="d-flex" id="search" role="search">
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Type to auto search..." id="search-input" aria-label="Search">
+                    <button class="btn btn-secondary" type="button" id="button-clear" disabled>Clear</button>
+                  </div>
+                </form>
+                <div class="dropdown-menu dropdown-menu-end mt-1 text-body-secondary">
+                  <div class="d-flex">
+                    <div class="overflow-auto text-center" id="dropdown-div" style="max-height: 400px;">
+                      <p class="p-5">Type to see search results here...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="travel_about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="travel_contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="d-flex flex-column min-vh-100" style="background-image: url('images/home.jpeg'); background-size: cover; background-position: center;" id="home">
+        <div class="p-4 p-md-5 flex-grow-1 d-flex align-items-center justify-content-center text-white bg-dark bg-gradient bg-opacity-50">
+          <div class="container">
+            <div class="col-lg-6 px-0">
+              <h1 class="display-4">Discover your next adventure</h1>
+              <p class="lead my-3">Unleash your wanderlust with curated travel experiences tailored just for you. Whether you seek serene beaches, vibrant cities, or hidden gems, your adventure begins here!</p>
+              <p class="lead mb-0"><a href="#" class="btn btn-secondary">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="position-fixed top-50 start-0 translate-middle-y">
+        <a href="https://www.instagram.com" class="d-block text-center p-2 text-white bg-danger rounded-start-0 rounded-top-2" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C8.743 0 8.334.014 7.054.072 5.774.132 5.203.333 4.14.63a5.85 5.85 0 0 0-2.125 1.383A5.85 5.85 0 0 0 .63 4.14C.333 5.203.132 5.774.072 7.054.014 8.334 0 8.743 0 12s.014 3.666.072 4.946c.06 1.28.261 1.85.558 2.913a5.85 5.85 0 0 0 1.383 2.125 5.85 5.85 0 0 0 2.125 1.383c1.063.297 1.633.498 2.913.558 1.28.058 1.689.072 4.946.072s3.666-.014 4.946-.072c1.28-.06 1.85-.261 2.913-.558a5.85 5.85 0 0 0 2.125-1.383 5.85 5.85 0 0 0 1.383-2.125c.297-1.063.498-1.633.558-2.913C23.986 15.666 24 15.257 24 12s-.014-3.666-.072-4.946c-.06-1.28-.261-1.85-.558-2.913a5.85 5.85 0 0 0-1.383-2.125A5.85 5.85 0 0 0 19.86.63c-1.063-.297-1.633-.498-2.913-.558C15.666.014 15.257 0 12 0zm-1.075 2.163h1.075c3.204 0 3.584.01 4.848.069 1.17.053 1.806.248 2.23.413.56.218.96.478 1.38.898s.68.82.898 1.38c.165.424.36 1.06.413 2.23.059 1.264.069 1.644.069 4.848s-.01 3.584-.069 4.848c-.053 1.17-.248 1.806-.413 2.23a4.35 4.35 0 0 1-.898 1.38 4.35 4.35 0 0 1-1.38.898c-.424.165-1.06.36-2.23.413-1.264.059-1.644.069-4.848.069s-3.584-.01-4.848-.069c-1.17-.053-1.806-.248-2.23-.413a4.35 4.35 0 0 1-1.38-.898 4.35 4.35 0 0 1-.898-1.38c-.165-.424-.36-1.06-.413-2.23-.059-1.264-.069-1.644-.069-4.848s.01-3.584.069-4.848c.053-1.17.248-1.806.413-2.23a4.35 4.35 0 0 1 .898-1.38 4.35 4.35 0 0 1 1.38-.898c.424-.165 1.06-.36 2.23-.413 1.26-.058 1.644-.068 4.807-.068zm7.482 1.992a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88zm-6.404 1.683a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 2.162a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com" class="d-block text-center p-2 text-white bg-primary" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.509 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.241 0-1.63.771-1.63 1.563v1.873h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+          </svg>
+        </a>
+        <a href="https://www.github.com" class="d-block text-center p-2 text-white bg-dark rounded-start-0 rounded-bottom-2" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.775.419-1.305.763-1.605-2.665-.303-5.466-1.334-5.466-5.931 0-1.31.468-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.323 3.303 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.005.404 2.292-1.553 3.298-1.23 3.298-1.23.654 1.653.242 2.873.12 3.176.77.84 1.232 1.911 1.232 3.221 0 4.609-2.804 5.625-5.475 5.921.43.37.814 1.102.814 2.221 0 1.605-.014 2.898-.014 3.293 0 .321.192.694.801.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"></path>
+          </svg>
+        </a>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
